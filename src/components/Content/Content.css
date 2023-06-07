@@ -1,0 +1,10 @@
+.content {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+
+.content__profile-info {
+	max-width: 315px;
+}

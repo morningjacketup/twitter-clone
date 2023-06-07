@@ -1,0 +1,146 @@
+.post__bg {
+	background-color: #1a2730;
+	border-radius: 10px;
+	padding: 10px;
+	display: flex;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.post__aside {
+	padding: 0 5px 20px 20px;
+}
+
+.post__main {
+	width: 100%;
+	padding: 15px;
+	padding-right: 15px;
+}
+
+.post__avatar {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.post__header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.post__text {
+	width: 100%;
+}
+
+.post__text-image {
+	width: 100%;
+	height: 200px;
+}
+
+.post__likes {
+	display: flex;
+	justify-content: space-between;
+}
+
+.post__user {
+	display: flex;
+	gap: 7px;
+}
+
+.post__user-verified {
+	width: 15px;
+	height: 15px;
+}
+
+.post__text-image {
+	width: 100%;
+	height: 100%;
+}
+
+.post__likes-container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.post__likes {
+	gap: 3px;
+	color: #536069;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.post__likes-icon {
+	background-color: #f04a6e;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+}
+
+.post__retweet-icon {
+	background-color: #37c4a1;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+}
+
+.post__export-icon {
+	background-color: #4592fa;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+}
+
+.post__likes-comments {
+	color: #536069;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.post__dots {
+	width: 30px;
+	height: 30px;
+	justify-content: flex-end;
+	cursor: pointer;
+}
+
+.post__likes_buttons {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.post__likes-btn {
+	background-color: #28353e;
+	padding: 10px 30px;
+	max-width: 150px;
+	border-radius: 10px;
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+	border: none;
+	cursor: pointer;
+}
+
+.post__btn-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	max-width: 150px;
+}
+
+.post__likes-btn-export {
+	background-color: #28353e;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+.post__btn-icon {
+	width: 30px;
+	height: 30px;
+}

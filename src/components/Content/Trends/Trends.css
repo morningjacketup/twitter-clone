@@ -1,0 +1,72 @@
+.trends__container {
+	background-color: #1a2730;
+	max-width: 315px;
+	height: 500px;
+	color: white;
+	border-radius: 10px;
+	position: sticky;
+	top: 30px;
+	padding: 20px;
+}
+
+.trends__header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-weight: 700;
+	padding-left: 5px;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.trends__setting-icon {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+
+.trends__item-header {
+	font-size: 14px;
+	color: #48555e;
+	margin-bottom: 10px;
+}
+
+.trends__item {
+	font-weight: 400;
+	list-style: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.trends__item:last-child {
+	width: 100%;
+	border-bottom: 1px solid #48555e;
+	padding-bottom: 10px;
+}
+
+.trends__item-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.trends__item-dots {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+
+.trends__footer-btn {
+	background-color: transparent;
+	border: none;
+	color: #3b77a1;
+	font-weight: 700;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.trends__item-tweets {
+	color: #606d76;
+	font-size: 13px;
+}

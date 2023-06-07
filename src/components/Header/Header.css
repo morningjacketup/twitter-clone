@@ -1,0 +1,102 @@
+header {
+	max-height: 50px;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+	justify-content: space-between;
+}
+
+.logo__image {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.header__search {
+	background-color: #1a2730;
+	padding: 5px 10px;
+	border-radius: 10px;
+	border: none;
+	color: white;
+	max-width: 250px;
+}
+
+.header__grid-icon {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.header__button {
+	background-color: #ffffff;
+	border: none;
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	max-width: 90px;
+	align-items: center;
+	border-radius: 20px;
+	padding: 7px 12px;
+	cursor: pointer;
+}
+
+.header__home {
+	max-width: 40px;
+	font-size: 12px;
+}
+
+.header__dots {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.header__notification-icon {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.header__email-icon {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.header__logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 15px;
+	max-width: 315px;
+}
+
+.profile {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 15px;
+}
+
+.avatar {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.header__button-profile {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	background-color: #2a3843;
+	border-radius: 15px;
+	padding: 5px 8px;
+}
+
+.header__profile-name {
+	color: white;
+	font-family: 'Roboco', sans-serif;
+	font-size: 12px;
+}
