@@ -1,17 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { initialState } from "./state";
+import { loginThunk } from "./thunk";
 
 const userSlice = createSlice({
-    name: 'user',
-    initialState,
-    reducers: {
-        setUser(state, action) {
-            console.log(action.payload)
-            state.user = { ...action.payload }
-        }
-    }
+  name: 'user',
+  initialState,
+  reducers: {},
+  extraReducers: b => {
+    b.addCase(loginThunk.fulfilled, (state, action) => {
+      state.user = action.payload
+    })
+  }
 })
-
-export const { setUser } = userSlice.actions
 
 export default userSlice

@@ -1,22 +1,21 @@
-import React, { useEffect, useState } from 'react';
 import './ProfileInfo.css';
 import { useSelector } from 'react-redux';
 
 export const ProfileInfo = () => {
-	const [loading, setLoading] = useState(true);
-	const { picture, firstName, lastName } = useSelector(
+	// const [loading, setLoading] = useState(true);
+	const { picture, firstName, lastName, title } = useSelector(
 		(state) => state.user.user
 	);
 
-	useEffect(() => {
-		// модальное окно загрузки
-		// fetch.then(r => {
-		//      if (r) {
-		// setLoading(false)
-		// setData(r.data[0])
-		// }.catch(err => setModal(error, 'error'))
-		// })
-	}, []);
+	// useEffect(() => {
+	// 	// модальное окно загрузки
+	// 	// fetch.then(r => {
+	// 	//      if (r) {
+	// 	// setLoading(false)
+	// 	// setData(r.data[0])
+	// 	// }.catch(err => setModal(error, 'error'))
+	// 	// })
+	// }, []);
 
 	return (
 		<div className='profile__container'>
@@ -29,7 +28,7 @@ export const ProfileInfo = () => {
 			<h1 className='profile__name'>
 				{firstName} {lastName}
 			</h1>
-			<span className='profile__username'>@notojoyoo</span>
+			<span className='profile__username'>@{title}</span>
 			<p className='profile__description'>
 				Penting gak Penting yang penting Posting
 			</p>

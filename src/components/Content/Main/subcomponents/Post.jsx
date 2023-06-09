@@ -8,28 +8,31 @@ import Verified from '../../../../assets/verified.svg';
 import './Post.css';
 
 export const Post = (props) => {
+	const time = Date.parse(props.publishDate);
+	const date = new Date(time);
 	return (
-		<div
-			className='post__bg'
-			key={props.i}
-		>
+		<div className='post__bg'>
 			<div className='post__aside'>
 				<img
 					className='post__avatar'
-					src={props.avatar}
+					src={props.owner.picture ? props.owner.picture : ''}
 					alt='avatar'
 				/>
 			</div>
 			<div className='post__main'>
 				<div className='post__header'>
 					<div className='post__user'>
-						<span>{props.name}</span>
+						<span>
+							{props.owner.firstName ? props.owner.firstName : ''}
+						</span>
 						<img
 							className='post__user-verified'
 							src={Verified}
 							alt='verified icon'
 						/>
-						<span>{props.username}</span>
+						<span className='post__user-username'>
+							@{props.owner.lastName ? props.owner.lastName : ''}
+						</span>
 					</div>
 					<img
 						className='post__dots'
@@ -37,12 +40,15 @@ export const Post = (props) => {
 						alt='settings'
 					/>
 				</div>
+				<div className='post__header_time'>
+					{date.getDate()}.{date.getMonth() + 1}.{date.getFullYear()}
+				</div>
 				<div className='post__text'>
-					<p>{props.text}</p>
+					<p>{props.text ? props.text : ''}</p>
 					{props.image ? (
 						<img
 							className='post__text-image'
-							src={props.image}
+							src={props.image ? props.image : ''}
 							alt='img'
 						/>
 					) : null}
@@ -64,7 +70,7 @@ export const Post = (props) => {
 							src={Export}
 							alt='export icon'
 						/>
-						241k
+						{props.likes}k Tweets
 					</div>
 					<span className='post__likes-comments'>45 comments</span>
 				</div>

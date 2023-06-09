@@ -7,14 +7,14 @@ import CalendarIcon from '../../../../assets/calendar.svg';
 import { useSelector } from 'react-redux';
 
 export const NewPostField = () => {
-	// const { picture } = useSelector((state) => state.user.user);
+	const { picture } = useSelector((state) => state.user.user);
 
 	return (
 		<div className='post__field-bg'>
 			<div className='post__field_aside'>
 				<img
 					className='post__field-avatar'
-					// src={picture}
+					src={picture}
 					alt='avatar'
 				/>
 			</div>

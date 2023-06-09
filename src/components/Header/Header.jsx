@@ -4,12 +4,15 @@ import Dots from '../../assets/dots.svg';
 import Notifications from '../../assets/notifications.svg';
 import EmailIcon from '../../assets/email.svg';
 import Grid from '../../assets/grid.svg';
-import Avatar from '../../assets/avatar.jpeg';
 import Home from '../../assets/home.svg';
 import Triangle from '../../assets/triangle.svg';
+import { useSelector } from 'react-redux';
 import './Header.css';
 
 export const Header = () => {
+	const { picture, firstName, lastName } = useSelector(
+		(state) => state.user.user
+	);
 	return (
 		<header>
 			<div className='header__logo'>
@@ -51,9 +54,11 @@ export const Header = () => {
 					<img
 						className='avatar'
 						alt='avatar'
-						src={Avatar}
+						src={picture}
 					/>
-					<span className='header__profile-name'>Yeremias NJ</span>
+					<span className='header__profile-name'>
+						{firstName} {lastName}
+					</span>
 					<img
 						className='header__grid-icon'
 						src={Triangle}
