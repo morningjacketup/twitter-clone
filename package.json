@@ -2,7 +2,7 @@
 	"name": "twitter-clone",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "http://morningjacketup.github.io/twitter-clone",
+	"homepage": "https://github.com/morningjacketup/twitter-clone",
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.9.5",
 		"@testing-library/jest-dom": "^5.16.5",
