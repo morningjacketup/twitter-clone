@@ -14,7 +14,7 @@ axios.interceptors.response.use((success) => {
   return success
 }, (error) => {
   toast.error('Error')
-  return error
+  return Promise.reject(error)
 })
 
 export default instance;
