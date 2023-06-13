@@ -11,7 +11,7 @@ function App() {
     <Provider store={store}>
       <ToastContainer />
       <Routes>
-        <Route path='/' element={<Navigate to='/login' />}></Route>
+        <Route path='/twitter-clone' element={<Navigate to='/login' />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/home' element={<Content />}></Route>
       </Routes>
